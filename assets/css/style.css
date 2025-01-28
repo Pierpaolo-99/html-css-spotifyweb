@@ -56,10 +56,32 @@ body{
     justify-content: space-between;
 }
 
+.logo{
+    display: none;
+}
+
 .aside_top{
+    color: var(--spoty-text);
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    span{
+        display: none; 
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--spoty-text);
+        font-weight: 500;
+        &:hover{
+            color: var(--spoty-light);
+        }
+    }
+}
+
+.playlist{
+    display: none;
 }
 
 .aside_bottom{
