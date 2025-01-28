@@ -20,6 +20,11 @@ body{
     --spoty-text: #7c7e83;
 }
 
+.container{
+    padding: 1rem;
+    background-color: var(--spoty-bg-top);
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -54,7 +59,18 @@ body{
 .aside_top{
     display: flex;
     flex-direction: column;
-    gap: 0.50rem;
+    gap: 1rem;
+}
+
+.aside_bottom{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+
+    #profile{
+        background-color: var(--spoty-text);
+        border-radius: 50%;
+    }
 }
 
 /* Main */
@@ -67,11 +83,27 @@ body{
 header{
     height: 90px;
     background-color: var(--spoty-primary);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    a{
+        text-decoration: none;
+        color: var(--spoty-light);
+        border: 1px solid;
+        padding: 0.75rem 1.75rem;
+        border-radius: 2rem;
+        font-weight: 500;
+
+        &:hover{
+            border: 3px solid;
+            font-weight: 700;
+        }
+    }
 }
 
 #site_nav{
     height: 100px;
-    background-color: var(--spoty-bg-top);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -82,22 +114,22 @@ header{
 
         a{
             text-decoration: none;
+            font-weight: 600;
             color: var(--spoty-text);
         }
     }
 }
 
 .recently{
-    background-color: var(--spoty-bg-top);
     color: var(--spoty-light);
 
     h2{
-        padding: 1rem;
+        padding: 1rem 0.50rem;
     }
 }
 
 .card{
-    padding: 1rem;
+    padding: 0.50rem;
     text-align: center;
     img{
         width: 100%;
