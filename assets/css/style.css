@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family:"Montserrat", serif;
+}
+
 /* Utility */
 
 :root{
@@ -85,6 +89,8 @@ header{
 
 .recently{
     background-color: var(--spoty-bg-top);
+    color: var(--spoty-light);
+    
     h2{
         padding: 1rem;
     }
