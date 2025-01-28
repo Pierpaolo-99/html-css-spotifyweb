@@ -82,6 +82,16 @@ body{
 
 .playlist{
     display: none;
+
+    span{
+        color: var(--spoty-light);
+        font-weight: 500;
+        padding: 0.50rem 0;
+    }
+
+    li{
+        padding: 0.50rem 0;
+    }
 }
 
 .aside_bottom{
@@ -92,6 +102,23 @@ body{
     #profile{
         background-color: var(--spoty-text);
         border-radius: 50%;
+    }
+
+    #name{
+        color: var(--spoty-light);
+        font-weight: 600;
+    }
+
+    span{
+        display: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--spoty-text);
+        &:hover{
+            color: var(--spoty-light);
+        }
     }
 }
 
@@ -210,10 +237,28 @@ header{
             #logo_sm{
                 display: none;
             }
+
+            a{
+                display: flex;
+                align-items: center;
+            }
         }
 
         .playlist{
             display: block;
+        }
+
+        .aside_bottom{
+
+            span{
+                display: inline-block;
+            }
+
+            a{
+                display: flex;
+                align-items: center;
+                gap: 0.50rem;
+            }
         }
 
 
