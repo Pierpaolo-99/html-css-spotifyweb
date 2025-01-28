@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --spoty-dark: #000000;
+    --spoty-light: #fefefe;
+    --spoty-primary: #080b12;
+    --spoty-bg-top: #141922;
+    --spoty-bg-bottom: #282828;
+    --spoty-border: #adff2f;
+}
