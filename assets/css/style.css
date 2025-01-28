@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* Utility */
+
 :root{
     --spoty-dark: #000000;
     --spoty-light: #fefefe;
@@ -11,4 +13,24 @@
     --spoty-bg-top: #141922;
     --spoty-bg-bottom: #282828;
     --spoty-border: #adff2f;
+}
+
+/* Debug */
+
+.debug {
+    border: 1px dashed black;
+
+    .sidebar{
+        width: 50px;
+        height: 1000px;
+    }
+}
+
+/* Top */
+
+.sidebar{
+    background-color: var(--spoty-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
