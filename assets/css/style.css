@@ -18,19 +18,48 @@
 /* Debug */
 
 .debug {
-    border: 1px dashed black;
-
-    .sidebar{
-        width: 50px;
-        height: 1000px;
-    }
+    border: 1px dashed white;
 }
 
 /* Top */
 
+.top{
+    display: flex;
+}
+
 .sidebar{
     background-color: var(--spoty-dark);
+    height: calc(100vh - 90px);
+    width: 50px;
+    padding: 0.25rem 0.50rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.aside_top{
+    display: flex;
+    flex-direction: column;
+    gap: 0.50rem;
+}
+
+*/ Main */
+
+#site_main{
+    width: calc(100vw - 50px);
+    height: calc(100vh - 90px);
+}
+
+header{
+    width: 502px;
+    height: 90px;
+    background-color: var(--spoty-primary);
+}
+
+/* Bottom */
+
+.bottom{
+    width: 552px;
+    height: 90px;
+    background-color: var(--spoty-bg-bottom);
 }
