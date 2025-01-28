@@ -76,6 +76,7 @@ body{
 /* Main */
 
 #site_main{
+    width: calc(100vw - 50px);
     height: calc(100vh - 90px);
     overflow-y: auto;
 }
@@ -120,11 +121,25 @@ header{
     }
 }
 
-.recently{
+.recently,
+.create,
+.popular{
     color: var(--spoty-light);
 
     h2{
         padding: 1rem 0.50rem;
+    }
+
+    h4{
+        padding: 1rem 0.50rem;
+        color: var(--spoty-text);
+    }
+}
+
+.popular{
+
+    img{
+        border-radius: 50%;
     }
 }
 
