@@ -204,6 +204,7 @@ header{
 
     span{
         display: inline-block;
+        padding-bottom: 3px;
     }
 }
 
@@ -228,6 +229,14 @@ header{
 
     .img_album{
         position: relative;
+
+        :hover{
+            display: block;
+        }
+
+        .icon_play{
+            display: none;
+        }
 
         img{
             &:hover{
