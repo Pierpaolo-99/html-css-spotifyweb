@@ -449,4 +449,9 @@ header{
     .col{
         width: calc(100% / 12 * 2);
     }
+
+    #site_nav{
+        max-width: 60%;
+        margin: auto;
+    }
 }
