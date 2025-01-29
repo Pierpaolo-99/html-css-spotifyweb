@@ -284,6 +284,7 @@ header{
 .song{
     width: calc(100% / 12 * 4);
     color: var(--spoty-light);
+    font-size: 0.75rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -302,23 +303,31 @@ header{
 
 .player{
     width: calc(100% / 12 * 4);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .play{
     color: var(--spoty-light);
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
 
     .play_icon{
         display: flex;
         align-items: center;
         gap: 1rem;
 
+        a{
+            color: var(--spoty-light);
+            i{
+                &:hover{
+                    font-size: 2rem;
+                }
+            }
+        }
+
         span{
-            font-size: 2.5rem;
+            font-size: 1.5rem;
         }
     }
 }
@@ -327,11 +336,12 @@ header{
     color: var(--spoty-light);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 
     .line_song{
         background-color: var(--spoty-text);
-        min-width: 150px;
+        min-width: 80%;
         height: 5px;
         border-radius: 5px;
 
@@ -340,7 +350,15 @@ header{
             width: 30%;
             height: 5px;
             border-radius: 5px;
+
+            &:hover{
+                background-color: yellow;
+            }
         }
+    }
+
+    span{
+        font-size: 0.75rem;
     }
 }
 
@@ -353,13 +371,14 @@ header{
     gap: 1rem;
 
     .icon{
+        font-size: 0.75rem;
         display: flex;
         gap: 0.5rem;
     }
 
     .volume{
         background-color: var(--spoty-text);
-        min-width: 100px;
+        min-width: 80px;
         height: 5px;
         border-radius: 5px;
 
