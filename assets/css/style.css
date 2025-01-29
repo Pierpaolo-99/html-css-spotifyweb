@@ -77,6 +77,7 @@ body{
         font-weight: 500;
         &:hover{
             color: var(--spoty-light);
+            border-left: 3px solid var(--spoty-border);
         }
     }
 }
@@ -178,22 +179,25 @@ header{
             text-decoration: none;
             font-weight: 600;
             color: var(--spoty-text);
+
+            &:hover{
+                color: var(--spoty-light);
+            }
         }
     }
 }
 
 .albums{
+    padding-top: 1rem;
     color: var(--spoty-light);
 
     h2{
         padding: 1rem 0.50rem;
     }
-}
 
-.popular{
-
-    img{
-        border-radius: 50%;
+    h4{
+        padding: 1rem 0.50rem;
+        color: var(--spoty-text);
     }
 }
 
@@ -210,9 +214,8 @@ header{
         width: 100%;
     }
 
-    h4{
-        padding: 1rem 0.50rem;
-        color: var(--spoty-text);
+    .circle{
+        border-radius: 50%;
     }
 }
 
