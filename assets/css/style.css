@@ -230,10 +230,6 @@ header{
     .img_album{
         position: relative;
 
-        :hover{
-            display: block;
-        }
-
         .icon_play{
             display: none;
         }
@@ -270,6 +266,9 @@ header{
     }
 }
 
+.img_album:hover .icon_play{
+    display: block;
+}
 
 /* Bottom */
 
@@ -283,6 +282,7 @@ header{
 }
 
 .song{
+    width: calc(100% / 12 * 4);
     color: var(--spoty-light);
     display: flex;
     align-items: center;
@@ -301,6 +301,7 @@ header{
 }
 
 .player{
+    width: calc(100% / 12 * 4);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,8 +345,10 @@ header{
 }
 
 .options{
+    width: calc(100% / 12 * 4);
     color: var(--spoty-light);
     display: flex;
+    justify-content: end;
     align-items: center;
     gap: 1rem;
 
