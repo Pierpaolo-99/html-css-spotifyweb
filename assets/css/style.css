@@ -304,6 +304,11 @@ header{
     .text_song{
         display: flex;
         flex-direction: column;
+
+        .name_song{
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .icon_sm{
@@ -471,12 +476,25 @@ header{
 
 
     }
+
+    .song{
+        gap: 1rem;
+    }
+    
+    .song .text_song .name_song{
+        flex-direction: row;
+        gap: 0.25rem;
+    }
 }
 
 @media screen and (min-width: 878px){
 
     .col{
         width: calc(100% / 12 * 4);
+    }
+
+    .song .icon_sm{
+        flex-direction: row;
     }
 }
 
