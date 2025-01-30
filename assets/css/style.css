@@ -7,6 +7,7 @@
 
 body{
     font-family:"Montserrat", serif;
+    overflow: hidden;
 }
 
 /* Utility */
@@ -33,12 +34,6 @@ body{
 
 .col{
     width: 50%;
-}
-
-/* Debug */
-
-.debug {
-    border: 1px dashed white;
 }
 
 /* Top */
@@ -145,6 +140,8 @@ body{
         aspect-ratio: 1;
         background-color: var(--spoty-text);
         border-radius: 50%;
+        width: 30px;
+        margin-left: 0.10rem;
     }
 
     #name{
@@ -334,6 +331,7 @@ header{
     .text_song{
         display: flex;
         flex-direction: column;
+        display: none;
 
         .name_song{
             display: flex;
@@ -345,6 +343,7 @@ header{
         display: flex;
         flex-direction: column;
         gap: 0.50rem;
+        display: none;
     }
 }
 
@@ -439,6 +438,7 @@ header{
         min-width: 80px;
         height: 5px;
         border-radius: 5px;
+        display: none;
 
         .volume_line{
             background-color: var(--spoty-light);
@@ -515,16 +515,27 @@ header{
             }
         }
 
-
     }
 
     .song{
         gap: 1rem;
     }
 
+    .song .icon_sm{
+        display: flex;
+    }
+
+    .song .text_song{
+        display: flex;
+    }
+
     .song .text_song .name_song{
         flex-direction: row;
         gap: 0.25rem;
+    }
+
+    .options .volume{
+        display: block;
     }
 }
 
