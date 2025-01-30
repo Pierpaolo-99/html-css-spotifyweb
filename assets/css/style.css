@@ -134,6 +134,17 @@ body{
         font-weight: 600;
     }
 
+    #install{
+        border-bottom: 1px solid;
+        padding-bottom: 0.50rem;
+
+        img{
+            width: 20px;
+            margin-left: 0.25rem;
+            opacity: 0.5;
+        }
+    }
+
     span{
         display: none;
     }
@@ -480,7 +491,7 @@ header{
     .song{
         gap: 1rem;
     }
-    
+
     .song .text_song .name_song{
         flex-direction: row;
         gap: 0.25rem;
